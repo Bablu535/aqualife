@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Login Page</title>
+        <link rel="stylesheet" type="text/css" href="style1.css">
+    
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    </head>
+<body>
+    <div class="hero">
+    <h2 class="logo"><span>AQUALIFE</span> </h2>
+    <div class="content">
+        
+        
+    </div>
+    <div  id="one" style="margin-left: -25px;">
+        <div class="form-body">
+			<div class="button-bd">
+				<div id="btn1"></div>
+				<button type="button1" class="toggle" onclick="login()">Login</button>
+				<button type="button1" class="toggle" onclick="reg()">Register</button>
+			</div>
+			<!-- <div class="icons">
+				<a href="https://www.google.com"><img src="https://storage.googleapis.com/support-kms-prod/ZAl1gIwyUsvfwxoW9ns47iJFioHXODBbIkrK" title="googlee"></a>
+				<a href="https://www.instagram.com"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/2048px-Instagram_icon.png"></a>
+				<a href="https://www.facebook.com" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/1024px-Facebook_Logo_%282019%29.png"></a>
+			</div> -->
+			<form id="login" class="formcss" name="myform" action="login.php" method="post" onsubmit="return(valid())">
+				<input class="inputcss" type="text" name="uname" placeholder="username" > 
+				<input class="inputcss" type="password" name="pass" placeholder="password" >
+				<input class="checkbox" type="checkbox" name="check" >
+				<span1> Remember Me</span1>
+				<input  type="submit" value="Submit" class="sub">
+			</form>
+			<form id="reges" class="formcss" action = "register.php" method="post">
+				<input class="inputcss" type="text" name="uname" placeholder="username" required>
+				<input class="inputcss" type="text" name="email" placeholder="Email" required>
+				<input class="inputcss" type="password" name="pass" placeholder="password" required> 
+				<input class="inputcss" type="password" name="cpass" placeholder="Confirm password" required>
+				
+				<input  type="submit" value="Submit" class="sub">
+			</form>
+		</div>
+        
+    </div>
+   
+</div>
+</body>
+<script type="text/javascript">
+	var x=document.getElementById('login');
+	var y=document.getElementById('reges');
+	var z=document.getElementById('btn1');
+	function reg() {
+		// body...
+		x.style.left="-400px";
+		y.style.left="50px";
+		z.style.left="120px";
+	}
+	function login() {
+		// body...
+		x.style.left="50px";
+		y.style.left="450px";
+		z.style.left="0px";
+	}
+	function  valid() {
+		// body...
+		let p=document.myform.uname.value;
+		if(p=="")
+		{
+			alert("Name not empty");
+		}
+	}
+</script>   
+</html>

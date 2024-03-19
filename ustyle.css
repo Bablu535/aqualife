@@ -1,0 +1,168 @@
+@font-face {
+	font-family: 'Muli Regular';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Muli Regular'), url('Muli-Regular.woff') format('woff');
+}
+@font-face {
+	font-family: 'Muli Bold';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Muli Bold'), url('Muli-Bold.woff') format('woff');
+}
+@font-face {
+	font-family: 'Muli ExtraBold';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Muli ExtraBold'), url('Muli-ExtraBold.woff') format('woff');
+}
+body {
+  background-image: url(https://img.freepik.com/free-photo/closeup-shot-koi-fish-pool_181624-1659.jpg?w=996&t=st=1702406809~exp=1702407409~hmac=2c1abc6b1a2b76c69a553b642131907ec6ce7049ea85ceadcd9eeb3992be092d);
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+body:before {
+	content: '';
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+}
+.blur {
+	backdrop-filter: blur(6px);
+}
+.formContent {
+	position: absolute;
+	top: 50%;
+	left: 75%;
+	transform: translate(-50%, -50%);
+	width: 400px;
+	height: 550px;
+	padding: 80px 40px;
+	box-sizing: border-box;
+	background: rgb(255 255 255 / 11%);
+	box-shadow: -1px 4px 28px 0px rgba(0,0,0,0.75);
+	border-radius: 10px;
+}
+.avatarImg {
+	position: absolute;
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	overflow: hidden;
+	top: calc(-80px/2);
+	left: calc(50% - 40px);
+}
+.formContent h2 {
+	margin: 0;
+	padding: 0 0 20px;
+	color: rgb(249, 249, 249);
+	text-align: center;
+	text-transform: uppercase;
+	font-family: "Muli Bold";
+}
+.formContent label {
+	margin: 0;
+	padding: 0;
+	font-weight: bold;
+	color: rgb(247, 238, 238);
+}
+.formContent input {
+	width: 100%;
+	margin-bottom: 20px;
+}
+.formContent input[type="text"], .formContent input[type="password"], .formContent input[type="email"] {
+	border: none;
+	border-bottom: 1px solid black;
+	background: transparent;
+	outline: none;
+	height: 40px;
+	color: black;
+	font-size: 16px;
+}
+.formContent input[type="submit"] {
+	color: black;
+	font-size: 16px;
+	background: #e8e8e8;
+	cursor: pointer;
+	border-radius: 5px;
+	border: 1px solid black;
+	outline: none;
+	margin-top: 5px;
+	padding: 10px 10px 10px 10px;
+}
+.formContent input[type="submit"]:hover {
+	color: black;
+	background: #104e99;
+}
+.formContent a {
+	color: black;
+	font-size: 14px;
+	font-weight: bold;
+	text-decoration: none;
+}
+input[type="checkbox"] {
+	width: 6%;
+}
+.remember span {
+	color: black;
+	font-family: 'Muli Regular', "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif"
+}
+.remember span a {
+	color: black;
+	font-family: 'Muli Regular', "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif"
+}
+.login {
+	color: black;
+	text-align: center;
+	margin: 20px 0;
+	font-family: 'Muli Regular', sans-serif;
+}
+.Oroption:before {
+	content: "";
+    display: block;
+    width: 115px;
+    height: 1px;
+    background: black;
+    left: 0;
+    position: absolute;
+    left: 15%;
+    margin-top: 10px;
+}
+.Oroption:after {
+	content: "";
+    display: block;
+    width: 115px;
+    height: 1px;
+    background:black ;
+    right: 58px;
+    /* top: 50%; */
+    position: absolute;
+    margin-top: -10px;
+}
+.links {
+	display: flex;
+	cursor: pointer;
+	color: black;
+	margin: 0 0 20px 0;
+}
+}
+.links i {
+	font-size: 17px;
+}
+i span {
+	margin-left: 8px;
+	font-weight: 500;
+	letter-spacing: 1px;
+	font-size: 16px;
+	font-family: 'Muli Regular', sans-serif;
+}
+.signup {
+	font-size: 15px;
+	color: black;
+	font-family: 'Muli Regular', sans serif;
+	text-align: center;
+}
+.signup a {
+	color: #104e99;
+	text-decoration: none;
+}

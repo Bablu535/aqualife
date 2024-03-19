@@ -1,0 +1,127 @@
+<link href="https://cdn.jsdelivr.net/npm/@mdi/font@5.9.55/css/materialdesignicons.min.css" rel="stylesheet" />
+
+<section class="faq">
+    <div class="container">
+        <h2 class="heading">Frequently Asked Questions (FAQ)</h2>
+        <span class="paragraph large"></span>
+
+        <div class="accordion-wrapper ">
+
+                <div class="actions">
+
+                    <details class="accordion">
+                        <summary tabindex="0">
+                            <span class="icon mdi mdi-plus icon-plus" id="" data-id=""></span>
+                            <span class="icon mdi mdi-minus icon-minus" id="" data-id=""></span>
+                            <h3 class="heading">What is AQUA LIFE?</h3>
+                        </summary>
+                        <div class="details-item-text">
+                            <p class="paragraph">Our mission is to provide high-quality products that meet the needs of our customers while maintaining a strong commitment to sustainability and customer satisfaction.</p>
+                        </div>
+                    </details>
+
+                    <details class="accordion">
+                        <summary tabindex="0">
+                            <span class="icon mdi mdi-plus icon-plus" id="" data-id=""></span>
+                            <span class="icon mdi mdi-minus icon-minus" id="" data-id=""></span>
+                            <h3 class="heading x-small">How can I contact your customer support team??</h3>
+                        </summary>
+                        <div class="details-item-text">
+                            <p class="paragraph">You can reach our customer support team by emailing support@aqualife.com or by calling our toll-free number at 1-234-567-8910. Our team is available during business hours, Monday to Friday.</p>
+                        </div>
+                    </details>
+
+                    <details class="accordion">
+                        <summary tabindex="0">
+                            <span class="icon mdi mdi-plus icon-plus" id="" data-id=""></span>
+                            <span class="icon mdi mdi-minus icon-minus" id="" data-id=""></span>
+                            <h3 class="heading">What payment methods do you accept?</h3>
+                        </summary>
+                        <div class="details-item-text">
+                            <p class="paragraph">We accept major Cash,cards &online payments.</p>
+                        </div>
+                    </details>
+
+        
+                </div>
+            </div>
+            <span class="paragraph">Did not find what you were looking for? <a href="contact.html" class="link main" data-id="">Contact</a></span>
+        </div>
+</section>
+<style>
+    .container {
+        width: 50%;
+        margin-right: auto;
+        margin-left: auto;
+      }
+      .heading {
+          font-family: Arial;
+          color: #288155;
+      }
+      .paragraph {
+          font-family: Arial;
+          color: #205528;
+          line-height: 1.5;
+      }
+      .faq {
+        padding: 64px 0;  
+        margin-bottom: 16px;
+        text-align: center;
+      }
+      .faq .accordion-wrapper .accordion .paragraph {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 16px;
+        text-align: center;
+        color: #205528;
+      }
+      .faq .accordion-wrapper .accordion .details-item-text p {
+        text-align: left;
+        font-size: 16px;
+      }
+      details {
+        border-bottom: 1px solid #ADB4A2;
+        cursor: pointer;
+      }
+      details > summary {
+        display: flex;
+        align-items: center;
+        padding: 16px 8px 0;
+      }
+      details > summary > .icon-plus, details > summary .icon-minus {
+        font-size: 24px;
+        color: #6D7561;
+        border-radius: 4px;
+        margin-right: 8px;
+        display: flex;
+        align-items: center;
+        height: 24px;
+      }
+      details > summary > .icon-plus:hover, details > summary .icon-minus:hover {
+        color: #288155;
+      }
+      details > summary > .icon-minus {
+        display: none;
+      }
+      details > summary:focus, details > summary:focus-within, details > summary:focus-visible {
+        outline: none;
+      }
+      details > summary:focus > .icon-plus, details > summary:focus > .icon-minus, details > summary:focus-within > .icon-plus, details > summary:focus-within > .icon-minus, details > summary:focus-visible > .icon-plus, details > summary:focus-visible > .icon-minus {
+        outline: 2px solid #7B86D1;
+        color: #6D7561;
+      }
+      details[open] .icon-plus {
+        display: none;
+      }
+      details[open] .icon-minus {
+        display: flex;
+      }
+      details:hover {
+        border-bottom: 1px solid #288154;
+      }
+      .link.main {    
+          color: #205527;
+      }
+</style>
